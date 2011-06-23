@@ -17,6 +17,8 @@ int main(int argc, char* argv[])
 
 	IwGxSetColClear(0x7f, 0x7f, 0x7f, 0x7f);
 
+
+
 	for (;;)
 	{
 		s3eDeviceYield(0);

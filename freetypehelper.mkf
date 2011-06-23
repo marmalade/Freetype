@@ -7,10 +7,19 @@ files
 	[src]
 	("helper/src")
 	freetypehelper.cpp
+	fthFont.cpp
+	fthRenderContext.cpp
 
 	[h]
 	("helper/h")
 	freetypehelper.h
+	fthAtlas.h
+	fthFont.h
+	fthGlyph.h
+	fthGlyphLayout.h
+	fthGlyphLayoutData.h
+	fthGlyphSet.h 
+	fthRenderContext.h
 }
 subprojects
 {
