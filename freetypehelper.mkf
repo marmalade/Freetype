@@ -1,0 +1,18 @@
+includepaths
+{
+	"helper/h"
+}
+files
+{
+	[src]
+	("helper/src")
+	freetypehelper.cpp
+
+	[h]
+	("helper/h")
+	freetypehelper.h
+}
+subprojects
+{
+	./freetype.mkf
+}
