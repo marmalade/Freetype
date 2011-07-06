@@ -3,7 +3,7 @@
 #include <IwGeom.h>
 #include <freetypehelper.h>
 
-namespace TinyOpenEngine
+namespace FreeTypeHelper
 {
 	class CfthAtlas;
 

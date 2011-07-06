@@ -15,3 +15,6 @@
 #
 # Some conditional operations are also permitted, see the
 # S3E documentation for details.
+
+[GX]
+VertCacheSize=4096

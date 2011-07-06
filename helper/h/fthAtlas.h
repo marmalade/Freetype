@@ -5,7 +5,7 @@
 #include <IwImage.h>
 #include <freetypehelper.h>
 
-namespace TinyOpenEngine
+namespace FreeTypeHelper
 {
 	struct CfthAtlas
 	{

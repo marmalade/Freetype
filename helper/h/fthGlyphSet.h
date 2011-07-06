@@ -4,7 +4,7 @@
 #include <fthGlyph.h>
 #include <IwArray.h>
 
-namespace TinyOpenEngine
+namespace FreeTypeHelper
 {
 	struct CfthGlyphSet
 	{

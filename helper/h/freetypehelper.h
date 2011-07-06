@@ -10,4 +10,6 @@ namespace FreeTypeHelper
 {
 	void fthInit();
 	void fthTerminate();
+
+	FT_Library fthGetFreeTypeLibrary();
 }

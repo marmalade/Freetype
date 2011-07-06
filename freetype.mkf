@@ -166,5 +166,7 @@ subprojects
 	iwgraphics
 	iwgx
 	iwutil
-	zlib
+#	zlib
 }
+package zlib
+subproject zlib

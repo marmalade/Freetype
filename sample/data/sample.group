@@ -1,0 +1,6 @@
+CIwResGroup
+{
+	name "sample"
+	
+	./font.ttf
+}

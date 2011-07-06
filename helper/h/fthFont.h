@@ -7,7 +7,7 @@
 #include <fthAtlas.h>
 #include <fthGlyphLayoutData.h>
 
-namespace TinyOpenEngine
+namespace FreeTypeHelper
 {
 	class CfthFont : public CIwResource
 	{

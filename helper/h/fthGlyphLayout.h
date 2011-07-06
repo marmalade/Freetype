@@ -3,7 +3,7 @@
 #include <freetypehelper.h>
 #include <fthGlyph.h>
 
-namespace TinyOpenEngine
+namespace FreeTypeHelper
 {
 	struct CfthGlyphLayout
 	{
