@@ -1,0 +1,22 @@
+# Marmalade developer package listing.
+# Generted by mdev v0.2.
+# The format of this file is similar but not identical to that used by debian's apt.
+Package-Format: 2
+Package: freetype
+Version: 1.0.0
+Revision: 1
+Maintainer: Game Master <gamemaster@101gr.com>
+Description: |
+  FreeType
+Built-With: 5.0.1
+Filename: freetype_1.0.0-1.mdev
+Size: 1387658
+MD5Sum: 498a0d45454d8226bd8fb890063e9fdc
+
+Source: freetype
+Version: 1.0.0
+Revision: 1
+Type: platform-independant
+Filename: freetype_1.0.0-1.msrc
+Size: 1390020
+MD5Sum: 5f9df0f303002f42da3d580d3edd7d13

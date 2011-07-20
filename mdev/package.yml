@@ -1,0 +1,18 @@
+Package: freetype
+Version: 1.0.0
+Revision: 1
+Maintainer: Game Master <gamemaster@101gr.com>
+Description: |
+ FreeType
+Homepage: https://github.com/marmalade/pugixml
+Type: platform-independant
+Contents:
+ - freetype.mkf
+ - freetypehelper.mkf
+ - src
+ - include
+ - helper
+ - README.txt
+#Contents-platform:
+# win32:
+#  - lib/x86/README
