@@ -11,3 +11,6 @@ Note that FreeType 2 is a font service and doesn't provide APIs to perform highe
 FreeType 2 is released under two open-source licenses: our own BSD-like FreeType License and the GPL. It can thus be used by any kind of projects, be they proprietary or not.
 
 http://www.freetype.org/
+
+Add this URL to the file at C:\Users\<UserName>\Application Data\Marmalade\mdev\sources.list:
+https://raw.github.com/marmalade/freetype/master
