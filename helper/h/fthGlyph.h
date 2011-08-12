@@ -5,7 +5,7 @@
 
 namespace FreeTypeHelper
 {
-	class CfthAtlas;
+	struct CfthAtlas;
 
 	struct CfthGlyph
 	{
