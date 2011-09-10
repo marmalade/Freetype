@@ -463,14 +463,14 @@ bool CfthFont::IsWhiteSpace(int32 code)
 void CfthGlyphLayoutData::RenderAt(const CIwSVec2 & pos,const CIwSVec2 & viewport)
 {
 	CIwColour c;c.Set(0xFFFFFFFF);
-	RenderAt(pos,viewport,CIwMat::g_Identity,c);
+	RenderAt(pos,viewport,CIwMat2D::g_Identity,c);
 }
-void CfthGlyphLayoutData::RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewport,const CIwMat & t)
+void CfthGlyphLayoutData::RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewport,const CIwMat2D & t)
 {
 	CIwColour c;c.Set(0xFFFFFFFF);
 	RenderAt(pos,viewport,t,c);
 }
-void CfthGlyphLayoutData::RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewport,const CIwMat & transformation, const CIwColour& col)
+void CfthGlyphLayoutData::RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewport,const CIwMat2D & transformation, const CIwColour& col)
 {
 	if (glyphs.size() == 0)
 		return;
@@ -497,6 +497,7 @@ void CfthGlyphLayoutData::RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewpo
 	{
 		if (start+2000 == cur)
 		{
+			if (transformation != CIwMat2D::g_Identity) for (CIwSVec2*i=vec+start;i!=vec+cur;++i) *i = transformation.TransformVec(*i);
 			//toeTransformScreenSpace3D(vec+start,vec+cur,transformation, viewport);
 			IwGxSetVertStreamScreenSpace(vec+start,cur-start);
 			IwGxSetUVStream(uv+start);
@@ -508,6 +509,7 @@ void CfthGlyphLayoutData::RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewpo
 		{
 			if (start != cur)
 			{
+				if (transformation != CIwMat2D::g_Identity) for (CIwSVec2*i=vec+start;i!=vec+cur;++i) *i = transformation.TransformVec(*i);
 				//toeTransformScreenSpace3D(vec+start,vec+cur,transformation,viewport);
 				IwGxSetVertStreamScreenSpace(vec+start,cur-start);
 				IwGxSetUVStream(uv+start);
@@ -573,6 +575,7 @@ void CfthGlyphLayoutData::RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewpo
 	}
 	if (start != cur)
 	{
+		if (transformation != CIwMat2D::g_Identity) for (CIwSVec2*i=vec+start;i!=vec+cur;++i) *i = transformation.TransformVec(*i);
 		//toeTransformScreenSpace3D(vec+start,vec+cur,transformation, viewport);
 		IwGxSetVertStreamScreenSpace(vec+start,cur-start);
 		IwGxSetUVStream(uv+start);

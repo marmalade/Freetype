@@ -33,8 +33,8 @@ namespace FreeTypeHelper
 		CIwArray<CIwColour> renderBufferColors;
 
 		void RenderAt(const CIwSVec2 & pos,const CIwSVec2 & viewport);
-		void RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewport,const CIwMat & t);
-		void RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewport,const CIwMat & t, const CIwColour& col);
+		void RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewport,const CIwMat2D & t);
+		void RenderAt(const CIwSVec2 & pos, const CIwSVec2 & viewport,const CIwMat2D & t, const CIwColour& col);
 
 		inline bool HasShadow() const {return shadowColour.a != 0 && ((shadowOffset.x != 0) || (shadowOffset.y != 0)); }
 
