@@ -21,6 +21,7 @@ void FreeTypeHelper::fthInit()
 
 	#ifdef IW_BUILD_RESOURCES
 	IwGetResManager()->AddHandler(new CfthFontResHandler("ttf","fthFreeTypeTTF"));
+	IwGetResManager()->AddHandler(new CfthFontResHandler("otf","fthFreeTypeOTF"));
 	#endif
 
 	IW_CLASS_REGISTER(CfthFont);

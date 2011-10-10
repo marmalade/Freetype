@@ -4,20 +4,20 @@
 Package-Format: 2
 Package: freetype
 Version: 1.0.0
-Revision: 3
+Revision: 4
 Maintainer: Game Master <gamemaster@101gr.com>
 Description: |
   FreeType
 Type: platform-independant
-Built-With: 5.1.4
-Filename: freetype_1.0.0-3.mdev
-Size: 1387806
-MD5Sum: 54ad1adeb7619b7d0c7b63b60ad1ca5e
+Built-With: 5.1.7
+Filename: freetype_1.0.0-4.mdev
+Size: 1387813
+MD5Sum: de88c79934561dcc108ef5681f67d3c6
 
 Source: freetype
 Version: 1.0.0
-Revision: 3
+Revision: 4
 Type: platform-independant
-Filename: freetype_1.0.0-3.msrc
-Size: 1390149
-MD5Sum: 3404b3ba5f316dc3df7c71ebce99fd14
+Filename: freetype_1.0.0-4.msrc
+Size: 1390156
+MD5Sum: f3da9ea59c38daf20be7da3d2ea18382
